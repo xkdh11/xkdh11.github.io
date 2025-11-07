@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="地址发布页面">
+  <title>地址发布</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand-row">
+        <!-- 去除框架，仅显示图片 -->
+        <div class="main-badge" aria-hidden="true">
+          <img src="https://www.baidu.com/img/bd_logo1.png" alt="trusted badge" />
+        </div>
+
+        <div class="badges" aria-hidden="true">
+          <div class="pill">✔ 验证</div>
+          <div class="pill">🔒 安全</div>
+          <div class="pill">⭐ 推荐</div>
+        </div>
+      </div>
+
+      <div class="search" role="search" aria-label="search">
+        <input class="input" type="text" placeholder="输入关键词或线路名" />
+        <button class="btn" onclick="location.href='/'">搜索</button>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="links">
+        <a href="#" class="link-btn g1" onclick="reurl(1)">点击进入最新线路</a>
+        <a href="#" class="link-btn g2" onclick="reurl(2)">最新线路二</a>
+        <a href="#" class="link-btn g3" onclick="reurl(3)">最新线路三</a>
+        <a href="#" class="link-btn g4" onclick="reurl(4)">国际线路</a>
+      </div>
+
+      <div class="tip">
+        温馨提示：推荐使用电信、联通网络和下载火狐浏览器或者谷歌浏览器访问网站。<br>
+        如遇浏览器屏蔽网站请切换浏览器，有网址安全检测请关闭，尝试更换网络环境，网页无法打开请耐心等待修复。
+      </div>
+
+      <div class="footer">
+        <span> dizhigo@gmail.com</span><br>
+		<span>©  信誉加速服务 • 版权所有</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function reurl(i) {
+    var url = "https://";
+    var urls = [
+      '9osdo691pla@bbltdma@btopc@dac@d#1',    
+      'xsvfe5a@bdf66ra@bccc@daic@d',            
+      'lcd1rxpu4oa@bbltdma@btopc@dac@d#3',       
+      'wangjidizhia@bcom#4'                
+    ];
+
+    var strURL = urls[i - 1];
+
+    // 替换 a@b 为 .
+    strURL = strURL.replace(/a@b/g, '.');
+    
+    // 替换其他规则
+    strURL = strURL.replace(/c@d/g, '/');
+    strURL = strURL.replace(/a@v/g, '');
+    
+    // 拼接完整的 URL
+    url += strURL;
+    window.location.href = url;
+  }
+</script>
+
+</body>
+</html>
