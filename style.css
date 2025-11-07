@@ -1,0 +1,174 @@
+:root {
+      --brand: #2b7cff;
+      --accent: #2ecc71;
+      --muted: #777;
+      --bg: #ffffff;
+      --card: #f7f9ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--bg);
+      color: #111;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 28px auto;
+      padding: 18px;
+    }
+
+    header {
+      text-align: center;
+      padding: 22px 12px;
+    }
+
+    .brand-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    .main-badge {
+      width: 210px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main-badge img {
+      width: 160px;
+      height: auto;
+      border-radius: 12px; /* 添加圆角 */
+    }
+
+    .badges {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 16px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid #e6eefc;
+      color: #1b365f;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .search {
+      margin: 18px auto 6px;
+      width: 62%;
+      max-width: 640px;
+      height: 44px;
+      border-radius: 6px;
+      border: 1px solid var(--brand);
+      display: flex;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .search .input {
+      flex: 1;
+      padding: 0 12px;
+      border: 0;
+      font-size: 15px;
+      outline: 0;
+    }
+
+    .search .btn {
+      width: 26%;
+      background: var(--brand);
+      color: #fff;
+      border: 0;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .content {
+      padding: 18px;
+      text-align: center;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .link-btn {
+      min-width: 240px;
+      padding: 10px 16px;
+      color: #fff;
+      border-radius: 8px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+      cursor: pointer;
+      border: 0;
+    }
+
+    .g1 {
+      background: linear-gradient(90deg, #3ac47d, #2bb673);
+    }
+
+    .g2 {
+      background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+    }
+
+    .g3 {
+      background: linear-gradient(90deg, #ef476f, #d02043);
+    }
+
+    .g4 {
+      background: linear-gradient(90deg, #00c2ff, #0066cc);
+    }
+
+    .tip {
+      margin-top: 18px;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 15px;
+      background: var(--card);
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.03);
+    }
+
+    .footer {
+      margin-top: 22px;
+      text-align: center;
+      color: #999;
+      font-size: 13px;
+    }
+
+    @media (max-width: 640px) {
+      .search {
+        width: 92%;
+      }
+
+      .main-badge {
+        width: 140px;
+        height: 78px;
+      }
+    }
